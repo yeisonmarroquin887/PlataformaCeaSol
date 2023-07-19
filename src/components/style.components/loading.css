@@ -7,9 +7,10 @@
     max-width: 100%;
     margin: auto;
 } 
-@media (min-width:700) {
+@media (min-width:700px) {
    .toda{
     background-color: #2d3a44;
+    height: 100vh;
 }
 .Loading{
     max-width: 64%;

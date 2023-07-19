@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './style.components/header.css'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
@@ -10,6 +11,13 @@ const Header = () => {
   const returnMenu = ()=>{
     setCambio(true)
   }
+
+  const navigate = useNavigate()
+
+  const handelNosotros = () => {
+    navigate('/nosotros')
+  }
+
   return (
     <div className='Header'>
         <nav className='Header_image'>
@@ -20,7 +28,7 @@ const Header = () => {
                <nav  className={`Header_info ${Cambio && 'close'}`}>
            <ul className='Header_ul'>
             <li className='Header_li'>Inicio</li>
-            <li className='Header_li'>Nosotros</li>
+            <li onClick={handelNosotros} className='Header_li'>Nosotros</li>
             <li className='Header_li'>Servicios</li>
             <li className='Header_li'>Contactenos</li>
             <li className='Header_li'>Plataforma Virtual</li>

@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Loanding from './components/Loanding'
 import { useState } from 'react'
+import Nosotros from './pages/Nosotros'
 
 function App() {
 
@@ -16,9 +17,10 @@ function App() {
   return (
     <div className='App'>
       {
-        Loading
+        false
         ?<Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/nosotros' element={<Nosotros/>}/>
        </Routes>
         :  <Loanding/>
       }
