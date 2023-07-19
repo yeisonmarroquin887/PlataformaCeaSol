@@ -1,0 +1,23 @@
+.Ceainitial{
+    display: grid;
+    text-align: center;
+}
+.Cea_title{
+    color: green;
+}
+.Ceainitial_info{
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    gap: 30%;
+    margin-top: 2em;
+}
+.Ceainitial_logo-name{
+    max-width: 20%;
+    margin: auto;
+    text-align: center;
+    color: green;
+}
+.Ceainitial_descript{
+    text-align: center;
+}
