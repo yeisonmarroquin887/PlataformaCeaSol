@@ -16,7 +16,7 @@ function App() {
   return (
     <div className='App'>
       {
-        Loading
+        false
         ?<Routes>
         <Route path='/' element={<Home/>}/>
        </Routes>
