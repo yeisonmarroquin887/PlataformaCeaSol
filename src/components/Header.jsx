@@ -27,7 +27,7 @@ const Header = () => {
              <i onClick={clickMenu} class='bx bx-menu'></i>
                <nav  className={`Header_info ${Cambio && 'close'}`}>
            <ul className='Header_ul'>
-            <li className='Header_li'>Inicio</li>
+            <li className='Header_li'> <a href="#">Inicio</a> </li>
             <li onClick={handelNosotros} className='Header_li'>Nosotros</li>
             <li className='Header_li'>Servicios</li>
             <li className='Header_li'>Contactenos</li>
